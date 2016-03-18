@@ -12,7 +12,7 @@ Authors@R: c(person("Philippe", "Grosjean", role = c("aut", "cre"),
 Maintainer: Philippe Grosjean <phgrosjean@sciviews.org>
 Depends: R (>= 2.6.0)
 Imports: tcltk, svMisc (>= 0.9-68)
-Description: Implements a simple socket server allowing to connect GUI clients to R
+Description: Implements a simple socket server allowing to connect clients to R.
 License: GPL-2
 URL: https://github.com/SciViews/svSocket
 BugReports: https://github.com/SciViews/svSocket/issues
