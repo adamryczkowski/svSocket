@@ -38,7 +38,6 @@ env:
 # Binary R packages (faster, but not always latest versions!)
 r_binary_packages:
   - svMisc
-  - svHttp
   # For covr
   - jsonlite  
   - devtools
@@ -57,6 +56,7 @@ r_binary_packages:
 r_packages:
   - rex
   - covr
+  - svHttp
 
 # Bioconductor packages
 #bioc_packages:
