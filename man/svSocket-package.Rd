@@ -3,7 +3,7 @@
 \alias{svSocket}
 \docType{package}
 
-\title{ SciViews R Socket Server }
+\title{ SciViews - Socket Server }
 \description{
   The SciViews svSocket package provides a stateful, multi-client and preemtive
   socket server. Socket transaction are operational even when R is buzy in its

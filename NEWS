@@ -1,5 +1,12 @@
 = svSocket News
 
+== Changes in svSocket 0.9-58
+
+* Switch to Github for development; use CI.
+
+* Added importFrom() for base packages in NAMESPACE.
+
+
 == Changes in svSocket 0.9-57
 
 * /testCLI directory moved to /inst/testCLI.

@@ -2,7 +2,7 @@ Package: svSocket
 Type: Package
 Version: 0.9-58
 Date: 2016-03-18
-Title: SciViews R Socket Server
+Title: SciViews - Socket Server
 Author: Philippe Grosjean [aut, cre],
   Matthew Dowle [ctb]
 Authors@R: c(person("Philippe", "Grosjean", role = c("aut", "cre"),
