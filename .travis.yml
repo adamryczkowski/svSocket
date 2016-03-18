@@ -38,6 +38,7 @@ env:
 # Binary R packages (faster, but not always latest versions!)
 r_binary_packages:
   - svMisc
+  - svHttp
   # For covr
   - jsonlite  
   - devtools

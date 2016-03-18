@@ -1,4 +1,5 @@
 import(tcltk, svMisc)
+importFrom(utils, URLdecode)
 
 export(evalServer,
        getSocketClients,
