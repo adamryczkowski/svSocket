@@ -7,9 +7,11 @@
 [![CRAN Status](http://www.r-pkg.org/badges/version/svSocket)](http://cran.r-project.org/package=svSocket)
 [![License](https://img.shields.io/badge/license-GPL-blue.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
 
-SciViews R socket server.
+SciViews - socket server.
 
-The [R-Forge version](https://r-forge.r-project.org/projects/sciviews/)) is moved to Github on 2016-03-16 (SVN version 569). **Please, do not use R-forge anymore for SciViews development, use this github repository instead.**
+_Build badges are as follows._
+- _Status for latest stable R version for both Linux and Mac OS X at left._
+- _Status for the devel version of R under Windows at right._ 
 
 
 ## Installation
@@ -31,7 +33,7 @@ Make sure you have the **devtools** R package installed:
 install.packages("devtools")
 ```
 
-Use `install_github()` to install the **svSocket** package from Github (master branch):
+Use `install_github()` to install the **svSocket** package from Github (source from **master** branch will be recompiled on your machine):
 
 ```r
 devtools::install_github("SciViews/svSocket")
@@ -39,7 +41,7 @@ devtools::install_github("SciViews/svSocket")
 
 R should install all required dependencies automatically, and then it should compile and install **svSocket**.
 
-Latest devel version in source and Windows binaires formats also available from [appveyor](https://ci.appveyor.com/project/phgrosjean/svSocket/build/artifacts).
+Latest devel version of **svSocket** (source + Windows binaires for the devel version of R) is also available from [appveyor](https://ci.appveyor.com/project/phgrosjean/svSocket/build/artifacts).
 
 
 ## Usage
@@ -56,3 +58,10 @@ Get help about this package:
 library(help = "svSocket")
 help("svSocket-package")
 ```
+
+For further instructions, please, refer to these help pages.
+
+
+## Note to developers
+
+This package used to be developed on R-Forge in the past. However, the latest [R-Forge version](https://r-forge.r-project.org/projects/sciviews/) was moved to this Github repository on 2016-03-18 (SVN version 569). **Please, do not use R-Forge anymore for SciViews development, use this Github repository instead.**
