@@ -9,9 +9,9 @@
 
 SciViews - socket server.
 
-_Build badges are as follows._
-- _Status for latest stable R version for both Linux and Mac OS X at left._
-- _Status for the devel version of R under Windows at right._ 
+_Build badges are as follows (R versions at the time of the build)._
+- _Status for devel R version for both Linux and Mac OS X at left._
+- _Status for the latest stable version of R under Windows at right._ 
 
 
 ## Installation
@@ -41,7 +41,7 @@ devtools::install_github("SciViews/svSocket")
 
 R should install all required dependencies automatically, and then it should compile and install **svSocket**.
 
-Latest devel version of **svSocket** (source + Windows binaires for the devel version of R) is also available from [appveyor](https://ci.appveyor.com/project/phgrosjean/svSocket/build/artifacts).
+Latest devel version of **svSocket** (source + Windows binaires for the latest stable version of R at the time of compilation) is also available from [appveyor](https://ci.appveyor.com/project/phgrosjean/svSocket/build/artifacts).
 
 
 ## Usage

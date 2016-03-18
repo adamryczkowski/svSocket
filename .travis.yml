@@ -3,6 +3,9 @@ language: r
 # on Travis CI does not provide it!
 sudo: required
 
+r:
+  - devel
+
 os:
   - linux
   - osx
