@@ -1,0 +1,16 @@
+import(tcltk, svMisc)
+
+export(evalServer,
+       getSocketClients,
+       getSocketClientsNames,
+       getSocketServerName,
+       getSocketServers,
+       parSocket,
+       processSocket,
+       sendSocketClients,
+       closeSocketClients,
+       startSocketServer,
+       stopSocketServer,
+       socketClientConnection)
+
+S3method(summary, sockclientconn)
