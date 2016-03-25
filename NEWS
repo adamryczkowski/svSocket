@@ -6,6 +6,9 @@
 
 * Added importFrom() for base packages in NAMESPACE.
 
+* evalServer() was not able to process correctly strings that contain double
+  quotes. These are now escaped. Thanks to Adam Ryczkowski for the bug report.
+
 
 == Changes in svSocket 0.9-57
 
