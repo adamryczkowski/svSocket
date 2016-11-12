@@ -16,6 +16,9 @@ evalServer(con, expr, send = NULL)
   \item{con}{ a socket connection with the server (see examples). }
   \item{expr}{ an R expression to evaluate in the server. }
   \item{send}{ optional data to send to the server. }
+  \item{txt_expr}{ an R string with a command line(s) to evaluate on the server.
+                   If R is a vector, it will get concatenated into one string,
+                   with each line infixed with semicolon (';'). }
 }
 
 \value{
@@ -33,6 +36,9 @@ evalServer(con, expr, send = NULL)
   and thus, the whole object becomes unserializable. In that case, try to coerce
   your object, or extract a part of it on the server side to make sure you send
   just the part that is transferable between the two R processes.
+
+  \code{txt_expr} is a convenience that discards non-standard evaluation.
+  It is usefull when you want to write a wrapper function to evalServer.
 }
 
 \author{Matthew Dowle (\email{mdowle@mdowle.plus.com})}
@@ -82,6 +88,20 @@ evalServer(con, "Z <- X + 1:1000; NULL")   # Same but prevents Y being returned
 evalServer(con, length(Z))
 Z <- evalServer(con, Z)        # Bring it back to client
 Z
+
+## Examples with txt_eval
+customsend<-function(con, code)
+{
+  evalServer(con,eval=NULL,txt_eval=code) # This might be much more fancy function burried deep in your code
+}
+code<-"y<-43"
+customsend(con,code)           # sets y<-43
+code<-c("y<-43", "x<-'string'")
+customsend(con,code)           # sets y<-43 and x<-'string' on server. Equivalent to...
+code<-"y<-43;x<-'string'"
+customsend(con,code)           # ...this example.
+
+
 
 ## Close connection with the R socket server
 close(con)
